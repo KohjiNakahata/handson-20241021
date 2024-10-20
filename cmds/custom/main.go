@@ -37,6 +37,7 @@ func Expose() {
 	diarkisexec.SetServerCommandHandler(custom.GetFieldInfoVer, custom.GetFieldInfoCmd, getFieldInfo)
 	diarkisexec.SetServerCommandHandler(CustomVer, getUserStatusListCmdID, getUserStatusList)
 	diarkisexec.SetServerCommandHandler(CustomVer, resonanceCmdID, resonanceCmd)
+	diarkisexec.SetServerCommandHandler(custom.AttackVer, custom.AttackCmd, attack)
 }
 func helloCmd(ver uint8, cmd uint16, payload []byte, userData *user.User, next func(error)) {
 	logger.Debug("Hello command has received %#v from the client SID:%s - UID:%s", payload, userData.SID, userData.ID)

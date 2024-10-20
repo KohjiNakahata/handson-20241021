@@ -1,0 +1,21 @@
+{
+  "attack": {
+    "ver": 2,
+    "cmd": 300,
+    "package": "custom",
+    "properties": {
+      "type": "u8"
+    }
+  },
+  "attackResult": {
+    "ver": 2,
+    "cmd": 300,
+    "package": "custom",
+    "properties": {
+      "type": "u8",
+      "uid": "string",
+      "damage": "u16",
+      "totalDamage": "u16"
+    }
+  }
+}
